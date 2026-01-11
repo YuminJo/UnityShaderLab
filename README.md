@@ -13,7 +13,7 @@ Unity ShaderLab과 셰이더 프로그래밍을 공부하면서 정리한 내용
 ---
 
 ## 📂 폴더 구조 예시
-
+```
 ShaderLab-Study/
 ├─ README.md
 ├─ Basics/
@@ -31,7 +31,7 @@ ShaderLab-Study/
 └─ Advanced/
 ├─ CustomLighting.shader
 └─ Notes.md
-
+```
 각 폴더에는:
 - `.shader` : 실습용 코드
 - `Notes.md` : 개념 정리 + 코드 설명
