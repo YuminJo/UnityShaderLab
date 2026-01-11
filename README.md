@@ -1,0 +1,74 @@
+# Unity ShaderLab Study Notes
+Unity ShaderLab과 셰이더 프로그래밍을 공부하면서 정리한 내용을 기록하는 저장소입니다.  
+이 문서는 셰이더의 기초 개념부터 실제 Unity에서 사용 가능한 예제까지, 학습 과정에서 얻은 지식과 노하우를 체계적으로 정리하는 것을 목표로 합니다.
+
+---
+
+## 📌 목적
+- Unity Shader + ShaderGraph 문법과 구조 이해
+- HLSL 기반 셰이더 프로그래밍 습득
+- 실무/개인 프로젝트에 바로 활용 가능한 셰이더 예제 축적
+- 나중에 다시 봐도 이해 가능한 개인 레퍼런스 문서화
+
+---
+
+## 📂 폴더 구조 예시
+
+ShaderLab-Study/
+├─ README.md
+├─ Basics/
+│ ├─ UnlitColor.shader
+│ ├─ TextureSample.shader
+│ └─ Notes.md
+├─ Lighting/
+│ ├─ Lambert.shader
+│ ├─ BlinnPhong.shader
+│ └─ Notes.md
+├─ Effects/
+│ ├─ RimLight.shader
+│ ├─ Dissolve.shader
+│ └─ Notes.md
+└─ Advanced/
+├─ CustomLighting.shader
+└─ Notes.md
+
+각 폴더에는:
+- `.shader` : 실습용 코드
+- `Notes.md` : 개념 정리 + 코드 설명
+
+형태로 관리하는 것을 목표로 합니다.
+
+---
+
+## ✍️ 정리 스타일
+
+- 최대한 “왜 이렇게 동작하는지”를 중심으로 서술
+- 코드 + 주석 + 개념 설명 같이 기록
+- 실험하면서 생긴 문제와 해결 방법도 함께 남기기
+- 나중에 봤을 때 다시 학습하지 않아도 이해할 수 있게 작성
+
+예시:
+
+```c
+// UV 좌표를 이용해 텍스처를 샘플링
+fixed4 col = tex2D(_MainTex, i.uv);
+tex2D는 2D 텍스처를 샘플링하는 함수이며,
+i.uv는 모델의 UV 좌표를 의미한다.
+
+---
+
+### 🚀 목표
+- ShaderGraph 없이 ShaderLab만으로 기본적인 효과 구현 가능
+- 셰이더 코드를 읽고 구조를 빠르게 파악할 수 있는 수준 도달
+- Unity 프로젝트에서 커스텀 셰이더를 직접 작성할 수 있는 기반 마련
+
+---
+🛠 사용 환경
+Unity 버전: 6000.3.0f1
+
+셰이더 언어: ShaderGraph + HLSL
+
+렌더 파이프라인: URP
+
+이 저장소는 Unity 셰이더를 제대로 이해하기 위한 개인 학습 기록용이며,
+실전 프로젝트에서 바로 써먹을 수 있는 셰이더 자산을 만드는 것이 최종 목표입니다.
