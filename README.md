@@ -12,29 +12,11 @@ Unity ShaderLab과 셰이더 프로그래밍을 공부하면서 정리한 내용
 
 ---
 
-## 📂 폴더 구조 예시
-```
-ShaderLab-Study/
-├─ README.md
-├─ Basics/
-│ ├─ UnlitColor.shader
-│ ├─ TextureSample.shader
-│ └─ Notes.md
-├─ Lighting/
-│ ├─ Lambert.shader
-│ ├─ BlinnPhong.shader
-│ └─ Notes.md
-├─ Effects/
-│ ├─ RimLight.shader
-│ ├─ Dissolve.shader
-│ └─ Notes.md
-└─ Advanced/
-├─ CustomLighting.shader
-└─ Notes.md
-```
+## 📂 폴더 구조
+Assets/Shader/각각 쉐이더
 각 폴더에는:
 - `.shader` : 실습용 코드
-- `Notes.md` : 개념 정리 + 코드 설명
+- `scene` : 테스트용 씬
 
 형태로 관리하는 것을 목표로 합니다.
 
